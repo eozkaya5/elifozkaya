@@ -1,0 +1,27 @@
+﻿@model TodoList.Models.Entites.TodoItem
+
+<h1>Liste sayfasını düzenle</h1>
+<hr />
+<div class="">
+    <div class="">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="">
+                <b>Liste Adı</b>
+                <input asp-for="Name" type="text" class="form-control"  />
+                <br />
+            </div>
+            <div class="">
+                <b>Açıklama</b>
+                <input asp-for="Description" type="text" class="form-control" />
+                <br />
+            </div>
+            <button type="submit">Düzenle</button>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

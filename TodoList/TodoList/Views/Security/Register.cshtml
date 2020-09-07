@@ -1,0 +1,33 @@
+﻿@model TodoList.Models.Viewmodels.UserModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+<form method="post" asp-action="Register">
+
+    <h3 class="legend">Kayıt Ol</h3>
+    <div colspan="3">
+        <div asp-validation-summary="All"></div>
+    </div>
+    <div class="input">
+        <span class="fa fa-user-o"></span>
+        <input asp-for="UserName" placeholder="Kullanıcı Adı" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div class="input">
+        <span class="fa fa-envelope-o"></span>
+        <input type="email" asp-for="Email" placeholder="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="input">
+        <span class="fa fa-mobile-phone"></span>
+        <input type="tel" asp-for="PhoneNumber" placeholder="Telefon Numarası" />
+        <span asp-validation-for="PhoneNumber"></span>
+    </div>
+    <div class="input">
+        <span class="fa fa-key"></span>
+        <input type="password" asp-for="Password" placeholder="Şifre" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <button type="submit" class="btn submit">Kayıt Ol</button>
+</form>

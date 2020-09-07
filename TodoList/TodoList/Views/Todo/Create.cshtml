@@ -1,0 +1,13 @@
+﻿
+@model Tuple<TodoList.Models.Entites.Todo, List<TodoList.Models.Entites.Todo>>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers**
+
+<form asp-controller="Todo" asp-action="Create" method="post" type="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Item1.Id" />
+    <div class="">
+        <b>Liste Başlığı</b>
+        <input asp-for="Item1.Name" type="text" class="form-control" name="name" value="" required />
+        <br />
+    </div>
+</form>
