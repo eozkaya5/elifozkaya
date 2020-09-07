@@ -1,0 +1,42 @@
+﻿@model Identity.Models.ViewModel.UserModel
+@{ 
+    Layout = null;
+}
+
+<form asp-controller="Security" asp-action="Register" method="post">
+
+    <h1>HESAP OLUŞTUR</h1>
+    <div asp-validation-summary="All"></div>
+    <div>
+        <input type="text" asp-for="UserName" class="form-control" placeholder="Username" required="" />
+    </div>
+    <div>
+        <input type="email" asp-for="Email" class="form-control" placeholder="Email" required="" />
+    </div>
+    <div>
+        <input type="password" asp-for="Password" class="form-control" placeholder="Password" required="" />
+    </div>
+    <div>
+        <button type="submit" class="btn submit">Kayıt Ol</button>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="separator">
+        <p class="change_link">
+            Already a member ?
+            <a href="#signin" class="to_register"> Giriş yap </a>
+        </p>
+
+        <div class="clearfix"></div>
+        <br />
+
+        <div>
+            <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+            <p>©2020 Tüm haklar saklıdır.</p>
+        </div>
+    </div>
+</form>
+
+
+           

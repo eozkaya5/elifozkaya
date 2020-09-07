@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CreditBook.Models.BookViewModel.Customer>
+
+<h1>Müsteri Sayfası</h1>
+<br />
+<form asp-controller="Customer" asp-action="Create" method="post">
+    <input type="hidden" name="CustomerId" value="@ViewBag.CustomerId" />
+    <div>
+        <label>Adı Soyadı:</label>
+        <input type="text" name="NameSurname" class="form-control" value="" required />
+    </div>
+</form>
+<br />
+@Html.Raw(TempData["Message"])
+<form asp-controller="Customer" asp-action="Index" method="post">
+    <input type="hidden" name="CustomerId" value="@ViewBag.CustomerId" />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Müsteri Kodu</th>
+                <th>Adı Soyadı</th>
+                <th>Toplam Alışveriş Ücreti</th>
+                <th>Toplam Ödenen Ücret</th>
+                <th>Toplam Borç</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NameSurname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalShopping)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalPayment)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalDept)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Sil</a> |
+                        <a asp-action="Index" asp-controller="Shopping" asp-route-id="@item.Id">Alışveriş yap</a> |
+                        <a asp-action="Index" asp-controller="Payment" asp-route-id="@item.Id"> Öde </a>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</form>
+
