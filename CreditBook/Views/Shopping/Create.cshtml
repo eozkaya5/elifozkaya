@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CreditBook.Models.BookViewModel.Shopping>
+
+<form asp-controller="Shopping" asp-action="Create" method="post">
+    <input type="hidden" name="CustomerId" value="@ViewBag.CustomerId" />
+    <div>
+        <label>Ücret:</label>
+        <input type="text" name="TotalFee" class="form-control" required />
+    </div>
+    <br />
+    <button class="btn-group">Ekle</button>
+    <br />
+</form>

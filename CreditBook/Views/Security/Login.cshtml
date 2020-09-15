@@ -1,0 +1,40 @@
+﻿@model Identity.Models.ViewModel.LoginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+<form asp-controller="Security" asp-action="Login" method="post">
+
+    <h1>Giriş Sayfası</h1>
+    <div asp-validation-summary="All"></div>
+    <div>
+        <input type="email" asp-for="Email" class="form-control" placeholder="E-Posta" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <input type="password" asp-for="Password" class="form-control" placeholder="Şifre" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn submit">Giriş Yap</button>
+        <a class="reset_pass" asp-action="PasswordReset" asp-controller="Security">Şifreni mi unuttun?</a>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="separator">
+        <p class="change_link">
+
+            <a asp-action="Register" asp-controller="Security" class="to_register">Hesap oluştur </a>
+        </p>
+
+        <div class="clearfix"></div>
+        <br />
+
+        <div>
+            <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+            <p>©2020 Tüm hakları Saklıdır.</p>
+        </div>
+    </div>
+</form>
+

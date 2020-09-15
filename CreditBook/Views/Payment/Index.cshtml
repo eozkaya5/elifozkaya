@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CreditBook.Models.BookViewModel.Payment>
+
+<h1> Ödeme Sayfası</h1>
+<br />
+<form asp-controller="Payment" asp-action="PaymentDept" method="post">
+    <input type="hidden" name="CustomerId" value="@ViewBag.CustomerId" />
+    <div>
+        <label>Ödenecek Ücret:</label>
+        <input type="text" name="FeePaid" class="form-control" value="" required />
+    </div>
+    <br />
+    <button type="submit">Öde</button>
+    <br />
+</form>
+
+<form asp-controller="Payment" asp-action="Index" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Ödeme Kodu</td>
+                <td>Müşteri Adı</td>
+                <td>Ödenen Ücret</td>
+                <td>Ödeme tarihi</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Customer.NameSurname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FeePaid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.Id">| Sil |</a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+
+<input type="text" class="form-control" readonly placeholder="Toplam ödenen ücret: @Model.Sum(x=>x.FeePaid)₺" />
