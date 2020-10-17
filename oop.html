@@ -155,51 +155,78 @@ Nesneye yönelik yazılım, diğer bilgisayar dillerinde gerekli olmayan ekstra 
 						</br>
 						<p class="d-inline-block">
                          <h2> Nesne yönelimli programlama, yazılım geliştirme için altı öncelikli hedef belirler. Bunlar;</h2></p>						
-						<p class="excert">						 
+											 
                          1. Natural (Doğal)
+						 <P>Daha sade,anlaşılır bir program yazılır.Bu sayede yazılan kod diğer geliştriciler tarafından anlaşılır hale gelir.</p>						 
 						 </br>
                          2. Reliable (Güvenirlik)
+						 <P>Tasarımı iyi yapılmış ve özenle yazılmış nesne yönelimli programlar güvenilir olur.Güvenirliği artırmanın yolu ise kapsamlı bir testtir.</p>
 						 </br>
                          3. Reusable (Yeniden kullanılabilirlik)
+						 <P>Nasıl diğer meslekteki insanlar kullanacakları eşyaları icat etmiyorsa, yazılımcılarda daha önce İyi hazırlanmış nesne yönelimli sınıfları yeniden kullanabilir.ancak iyi hazırlamnmış sınıflar oluşturmak zor iştir.Soyutlamaya, odaklanmayı ve dikkat etmeyi gerektirir.</p>
 						 </br>
                          4. Maintainable (Sürdürülebilirlik)
+						 <P>Başarılı oluşturulan nesne yönelimli kod bakımlıdır. Bu nedenle karşılacacağımız hata, kolay bir şekilde tek bir yerde düzeltilebilir.</p>
 						 </br>
                          5. Extendable (Genişletilebilirlik)
+						 <P>Yazılımın büyümesini ve değişmeni göz önünde bulundurulmalıdır.Nesne yönelimli programlama nesnelerin bir kütüphanesi oluşturulurken,nesnelerin işlevselliğinide  ele alaır .Yazılım dinamiktir.</p>
 						 </br>
                          6. Timely (Zamandan tasarruf)
-						</p>
-						 <div class="about-me pb-top">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
+						 <P>Yazılım projeleri haftalarca  sürebilir. Bu durumu pasif hale getirebilmek için nesne yönelimli programlama var sayesinde süreç daha hızlıdır.
+						 Programınızı nesneler halinde oluşturulduysa eğer bir problem olduğunda birden fazla kod parçası üzerinde ayrı ayrı çalışılabilir hatta birden fazla geliştirici tarafından bağımsız olarak aynı anda problem çözülebilir.</p>
+						
+					           
                     <div class="col-lg-6 col-md-6">
 					<h2>OOP terimleri nelerdir?</h2></p>	
                         <div class="about-me-img mb-50">
                             <img src="assets/img/blog/terim.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="about-me-caption">
-                             
-                   					 
-						* Class (Sınıf)
+                   <p class="d-inline-block">                                                                   					 
+						<h2>* Class (Sınıf)</h2>
+						<p>Nesne ve özelliklerini tanımlamak için kullandığımız referans yapı sınıfıdır.</p>
+						<p>Bir hayvan tanımlayacağız, cinsi kedi, yaşı 3,olacak. Bu hayvanı ancak içerisinde  cins, yaş  özelliklerini barındıran ve bunları kullanarak “hayvan” oluşturacak bir sınıfı kullanarak oluşturabiliriz. Bu yüzden referans noktamız hayvan sınıfı olur. Hayvan sınıfını kullanarak, gerekli özelliklerini tanımlayarak ve bu nesneye bir isim vererek bir hayvan tanımlayabiliriz.</p>						
 						</br>
-                        * Object (Nesne)
+						Bir sınıfın içinde özellikler oluşturmak için değişkenleri, işlevler oluşturmak için ise fonksiyonları (methodlar) kullanırız. O yüzden değişken ve fonksiyon tanımlamaya bakmamız gerekir.
 						</br>
-                        * Method, Yapıcı methodlar, Yıkıcı methodlar
-						</br>
-                        * Property (Özellik)
-						</br>
-                        * Access Modifiers(Erişim belirteçleri):Public, Protected, Internel, Private, Protected Internal
-						</br>
-                        * Abstract (Soyutlama)
-                        </br>
-                        * Field (Alan)
-						</p>						
+						<div class="about-me-img mb-50">
+                            <img src="assets/img/blog/class.png" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+						</br>
+                       <h2> * Object (Nesne)</h2>
+						<p>Objeler classların çalışan versiyonları olarak tanımlanabilir. Yazılımın çalışması için gereken bütün datayı ve durum bilgilerini barındır.</p>
+						</br>
+                        <h2>* Method, Yapıcı methodlar, Yıkıcı methodlar</h2>
+						
+						<p>Metotların amacı kodu parçalara ayırmaktır.Benzer kodların tekrar kullanılması gereken durumlarda kolaylık sağlar. Oluşturulan metot, ismiyle çağrılarak içerisinde bulunan kod bloklarının çalıştırılması sağlanır. Böylece kodu yazmak çok daha basit hale gelir. Metotlar nesnenin yapabileceği eylemler anlamına gelir. 
+						</p>
+						<p>Örneğin; nesne araba olsun. Metotlar klima aç, arabayı çalıştır, cam aç olabilir.</p>
+						<p>Yapıcı ve yıkıcı methodlar sınıftan bir nesne türetildiğinde ve nesne ile ilgili bir işlem yapılıp nesneden çıkılırken çalışan işlevlerdir.
+Kurucu ve yıkıcıların her dilde tanımlanma şekilleri farklıdır.</p>
+						 <div class="about-me-img mb-50">
+                            <img src="assets/img/blog/method.png" alt="">
+                        </div>		
+						</br>
+                        <h2>* Access Modifiers(Erişim belirteçleri)</h2>
+                        <h6> => Public :</h6>Yazdığımız kodu heryerden erişmemizi sağlar
+                        <h6> => Private :</h6> Sadece tanımlandığı yerden  erişim yetkisi verir.
+                        <h6> => Protected:</h6> İşaretlenmiş öğeye sadece kalıtım bırakılan yerden erişim verilebilir.
+                        <h6> => İnternal :</h6> Sadece ilgili uygulama içerisinden erişilebilir .
+						<p></p>
+						</br>
+                       <h2> * Abstract (Soyutlama)</h2>
+						<p>Alt sınıfların ortak özellikleri ve işlevlerini taşıyan henüz bir nesne olmayan üst sınıf oluşturmak istendiğinde soyut methot olarak oluşturulabilir  soyut methoda sahip bir sınıfta soyut olur. Soyut sınıflar nesne oluşturmaz. Abstaract kelimesi kullanılır.
+						</br>
+						Örneğin; Şekil isminde soyut sınıf oluşturalım alt sınıf olarak kare adında gerçek sınıf oluşturalım bu sınıfa çevre adında methot ekleyelim.Şekil altındaki diğer alt sınıflar ortak ile ortak method olduğundan şekil soyut sınıfın altınada eklenir.
+						</p>
+                       
+					   </br>
+                       <h2> * Field (Alan)-Property (Özellik)</h2>
+						<p>C# dilinde özellikle “get” ve “set” kullanılarak bu alanlara ilgili olarak değer alma ve değer atama işlemlerini yapmaya yarar.Nesnenin özellikleridir.</p>
+						</p>						
+                      
+               
+           
 						
                                                  
 					  <p class="d-inline-block">
@@ -209,32 +236,46 @@ Nesneye yönelik yazılım, diğer bilgisayar dillerinde gerekli olmayan ekstra 
                      </div>						 
 						 <p class="excert">
 						 <h3>1. Encapsulation (Kapsülleme)</h3>
-Obje hakkında bilgiler ve işlemlerdir. Method ve özellik olarak adlandırdığımız işlemler bir nesne niteliklerini ve işlemelerini ortaya koyar.
+                             Obje hakkında bilgiler ve işlemlerdir. Method ve özellik olarak adlandırdığımız işlemler bir nesne niteliklerini ve işlemelerini ortaya koyar.
 
-Kapsülleme, verileri işleyen verileri ve işlevleri birbirine bağlayan ve hem dış müdahalelerden hem de kötüye kullanımdan koruyan, nesne yönelimli bir programlama konseptidir. Veri kapsülleme, önemli OOP veri gizleme konseptine yol açtı .
+                              Kapsülleme, verileri işleyen verileri ve işlevleri birbirine bağlayan ve hem dış müdahalelerden hem de kötüye kullanımdan koruyan, nesne yönelimli bir programlama konseptidir. Veri kapsülleme, önemli OOP veri gizleme konseptine yol açtı .
  
-Bir sınıf, kodun dahili nesne verilerine erişmesine izin vermiyorsa ve yalnızca yöntemler aracılığıyla erişime izin veriyorsa, bu, kapsülleme olarak bilinen güçlü bir soyutlama veya bilgi gizleme biçimidir .
-</br>
-</br>
-ÖRNEK:  İnsan sınıfında giyim tarzı bizi iliglendirmiyorsa bunu kapalı (private) yapıp gizleriz. Fakat isim soyisim gibi bilgiler bizi ilgilendirdiği için bunlar açık bırakılır. Bu olaya bilgi saklama yani kapsülleme denilmektedir. Bilgi saklama erişim belirteçleri (public, private, protected) ile gerçekleştirilir.
-</p>
+                            Bir sınıf, kodun dahili nesne verilerine erişmesine izin vermiyorsa ve yalnızca yöntemler aracılığıyla erişime izin veriyorsa, bu, kapsülleme olarak bilinen güçlü bir soyutlama veya bilgi gizleme biçimidir .
+                           </br>
+						    <div class="feature-img">
+                        <img class="img-fluid" src="assets/img/blog/kapsülleme.png" alt="">
+                     </div>	
+                             </br>
+                          ÖRNEK:  İnsan sınıfında giyim tarzı bizi iliglendirmiyorsa bunu kapalı (private) yapıp gizleriz. Fakat isim soyisim gibi bilgiler bizi ilgilendirdiği için bunlar açık bırakılır. Bu olaya bilgi saklama yani kapsülleme denilmektedir. Bilgi saklama erişim belirteçleri (public, private, protected) ile gerçekleştirilir.
+                         </p>
 						 <p class="excert">
 						 <h3> 2. Inheritance (Kalıtım)</h3>						 
-                    
-Bir objenin bir başka obje üzerine kurulmasıdır. Kısaca miras alma anlamına gelir.
- </br>
- </br>
-ÖRNEK: Arabanın; camının, kapısının olması ve bunların arabanın tam objesini etkilemesine denir.
-</p>
- <p class="excert">
+                    Inheritance (Miras-kalıtım), bir sınıfın temel anlamda yapacağı iş ve eylemleri baska bir sınıftan kalıtım almasıdır.Sınıflar arasında hiyearşik bir yapı kurabilmek için kullanılır. Inheritance bir sınıfın kendi özellikleri ve metotları yanı sıra kalıtım aldığım base(taban) sınıfın özellikleri ve metotlarına da sahip olabilmesidir.Ancak kalıtım alan sınıf herhangi bir özellik veya metoda sahip olmasa da olur.
+					</br>
+                         Bir objenin bir başka obje üzerine kurulmasıdır. Kısaca miras alma anlamına gelir.
+                        
+                         </br>
+                      Örneğin: Arabanın; camının, kapısının olması ve bunların arabanın tam objesini etkilemesine denir.
+                           </p>
+						   </br>
+						   Java için örnek şekil aşağıdadır.
+						 <div class="feature-img">
+                        <img class="img-fluid" src="assets/img/blog/kalıtım.jpg" alt="">
+                     </div>	
+                       <p class="excert">
 						 <h3>  3. Polymorphism (Çok biçimlilik)</h3>		
                       
-Belli bir objenin birçok obje tarafından kullanılabilmesidir.
- </br>
- </br>
-ÖRNEK: Alan hesapla Adında üst sınıfımız olsun kare ve üçgen isminde alt sınıfımız var hesapla methodu kallanarak farklı şekilleri doğru hesaplarız.
- </p>
-
+                          Belli bir objenin birçok obje tarafından kullanılabilmesidir.Birçok biçimde görünme yeteneği.Nesneye yönelik programlama’da, polimorfizm, bir programlama dilinin veri türüne veya sınıfına bağlı olarak nesneleri farklı şekilde işleme yeteneğini ifade eder.Daha spesifik olarak, türetilmiş sınıflar için yöntemleri yeniden tanımlama yeteneğidir. OOP’de polimorfizmin en yaygın kullanımı, bir alt sınıf nesnesini belirtmek için bir üst sınıf referansı kullanıldığında ortaya çıkar.
+                          </br>
+						  Temel sınıfa ait metotları türemiş sınıfta farklı biçimlerde tanımlayarak kullanmak için override ve virtual niteleyicilerini kullanmak gereklidir.
+                          </br>
+                     ÖRNEK: Alan hesapla Adında üst sınıfımız olsun kare ve üçgen isminde alt sınıfımız var hesapla methodu kallanarak farklı şekilleri doğru hesaplarız.
+                      </p>
+					  Başka bir örnek için şekli inceleyin.
+                       <div class="feature-img">
+                        <img class="img-fluid" src="assets/img/blog/cb.jpg" alt="">
+                     </div>	
+<p>Hayvan Adında üst sınıfımız olsun kartal ve timsah isminde alt sınıfımız var avyakala methodu kallanarak farklı cins hayvanları ortak iş yapmasını sağlarız. </p>					 
                      </div>
                   </div>
                  
