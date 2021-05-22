@@ -61,7 +61,7 @@
                                                   <ul class="submenu">
                                                     <li><a href="blog_details.html">Asp.Net Core </a></li>
                                                         <li><a href="oop.html">OOP</a></li>
-													<li><a href="http.html">Http Kodları</a></li>
+													<li><a href="elements.html"></a></li>
                                                       <li><a href="portfolio_details.html"> </a></li>
                                                   </ul>
                                               </li>
@@ -108,35 +108,64 @@
                <div class="col-lg-8 posts-list">
                   <div class="single-post">
 				   <div class="blog_details">                      
-                      <h2>Asp.Net Core öğrenmeye nasıl başladım?</h2>
+                      <h2>HTTP DURUM KODLARI NELERDİR? NE İŞE YARAR?</h2>
                         </h2>  
                      <div class="feature-img">
-                        <img class="img-fluid" src="assets/img/blog/single_blog_1.png" alt="">
+                        <img class="img-fluid" src="assets/img/http/http2.jpg" alt="">
                      </div>
-                                       
+					      </br>
+                           <h2>HTTP STATUS CODES(DURUM KODLARI)</h2>
+                      </br>		
+                         <h4><b>2XX (200-299 arası) - http durum kodları başarılı anlamına gelir.	</b></h4>	
+                         <br>
+                         <br>
+                      
+                         <h5><b>200 : OK(BAŞARILI) </b></h5>				  
                         <p class="excert">
-                          Asp.Net Core başlamadan önce, nasıl kod yazmalıyım? Nelere dikkat etmeliyim? Değişken isimleri nasıl olmalı? Metot isimleri nasıl olmalı? Büyük harf, küçük harfle mi başlamalı ? 
-						  <p>Kısaca; <a href=" https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md">Ktaranov/adlandırma kuralı</a> 'dan isimlendirme kurallarını öğrendim. Ve öğrenmeye devam ediyorum.</p>
+                        	İstek başarılı oldu. Herşey olması gerektiği gibi 
                         </p>
-						<p class="excert">
-						Daha sonra veri tabanı oluşturdum. MSSQL programı kullanarak yaptığım veri tabanı yerine ” Code First “ mantığı ile oluşturdum. <a href="https://www.gencayyildiz.com/blog/entity-framework-ile-code-first-yaklasimi/">Entity Framework İle Code First Yaklaşımı</a> sitesinden yardım aldım.
-                        <p> Açıkçası  başka bir programı açmadan Visual Studio ile veri tabanı oluşturmak  daha ilgi çekici...</p>
-                       <p> Veri tabanını da yaptıktan sonra, kullanıcı giriş sayfası tasarımını oluşturdum. Buraya kadar yazdıklarım projenin kolay kısmıydı. Asıl proje bundan sonra başlıyor.</p>
-						</p>
-						<p class="excert">
-						Session kullanmadan kullanıcı sayfası oluşturacğım için. Identity kullandım.Identity hakkında hiçbir bilgim olmadığı için araştırmalar yaptım. Araştırdıklarımı uygulamaya başladım. Hiç bu kadar zorlandığım bir konu olmamıştı. Limitlerimi sonuna kadar kullandım. Yanlış yaptıkça sıfırdan başladım.
-						<a href="https://www.gencayyildiz.com/blog/asp-net-core-identity-yazi-dizisi/">Asp.NET Core Identity – Yazı Dizisi</a> sitesindeki makaleleri okudum, anladım ve uyguladım giriş başarısızdı. Çünkü küçücük bir ayrıntıyı atlamıştım. Startup sayfasındaki Configure methodunda ki sıralamayı dikkate almamıştım sıralamayı düzelttim ve çalıştırdım. Sonuç başarılıydı. Artık Kullanıcı işlemlerini çalışıyor.
-						Session kullanmadan Bir kullanıcı sayfası oluşturmalıyım. Araştırmaya başladım. Karşıma çıkan tüm sayfaları inceledim ve Identity ile karşılaştım ama Identity hakkında hiçbir bilgim yoktu. Araştırmak yetmezdi araştırdıklarımı uygulamaya başladım. Ama ne yazdığım hakkında hiçbir fikrim yoktu. Hiç bu kadar zorlandığım bir konu olmamıştı. Limitlerimi sonuna kadar kullandım. Yanlış yaptıkça sıfırdan başladım.
-						Hiçbir zaman pes etmedim. <a href="https://www.gencayyildiz.com/blog/asp-net-core-identity-yazi-dizisi/">Asp.NET Core Identity – Yazı Dizisi</a> sitesindeki makaleleri okudum, anladım ve uyguladım giriş başarısız çünkü küçücük bir ayrıntıyı atlamışım Startup sayfasındaki Configure methodunda ki sıralamayı dikkate almamıştım sıralamayı düzelttim ve çalıştırdım. Sonuç başarılıydı. Artık Kullanıcı işlemlerini çalışıyor.
-
-						</p>
-						<p class="excert">
-						Bundan sonraki süreçte Ekle , güncelle, sil gibi işlemleri oluşturmak kaldı;
-                         İlk olarak  tasarım sayfalarını oluşturdum ardından Controller kısmından  tasarımları işlevlerini oluşturdum.
-
-						</p>
+                       <p><b> HTTP metoduna göre farklı anlamlara gelir:</b></p>
                        
-                        <div class="quote-wrapper">
+                        <p><b>#	GET:</b> Kaynak alındı ve mesaj gövdesinde iletildi.</p> 
+                        <p><b>#	HEAD:</b> Varlık başlıkları mesaj gövdesindedir.</p> 
+                        <p><b>#	PUT veya POST:</b> Eylemin sonucunu açıklayan kaynak mesaj gövdesinde iletildi.</p>
+                        <p><b>#	TRACE:</b> Mesaj gövdesinde sunucu tarafından alındığı şekliyle istek mesajı bulunuyor.</p>
+                         <br>  
+                        <h5><b>201 :  CREATED (OLUŞTURULDU) </b></h5>				  
+						       <p>İstek başarılı oldu ve bunun sonucunda yeni bir kaynak oluşturuldu." Genellikle POST veya PUT isteklerinden sonra gönderilen yanıt budur.</p>
+
+                         <h4><b>3XX (300-399 arası) - http durum kodları, http yönlendirme durum kodları anlamına gelir.</b></h4>	
+                     </br>
+                         <h5><b>	301 : MOVED PARMANENTY (KALICI OLARAK TAŞINDI) </b></h5>				  
+                         <p>Bu yanıt kodu, istenen kaynağın URI'sinin değiştirildiği anlamına gelir. Muhtemelen, yanıtta yeni URI verilecektir.</p>
+
+                         <h4><b>4XX (400-499 arası) - http durum kodları, işlemci hatası anlamına gelir</b></h4>	
+                  </br>
+                  <h5><b>400 : BAD REQUEST (KÖTÜ İSTEK) </b></h5>				  
+
+                     <p>	Bu yanıt, sunucunun geçersiz sözdizimi nedeniyle isteği anlayamadığı anlamına gelir.</p>
+                     <h5><b>	401 : UNOUTHARİZED (YETKİSİZ) </b></h5>				  
+                       <p>Yapılan istek için kullanıcı kimlik doğrulaması gerektiğini ifade eder.
+                    İstemciye döndürülen yanıt içerisinde istenilen kaynak için geçerli olan bir kimlik sorgulama header alanı döndürülmelidir. 
+                         İstek içerisinde kimlik bilgileri yer alıyorsa 401 kodu bu sefer gönderilen kullanıcı bilgileri için yetkilendirmenin reddedildiğini ifade eder.</p>
+                     <h5><b>	403 : FORBİDDEN (YASAKLANDI) </b></h5>		
+                      <p> 	İstemci içeriğe erişim hakkına sahip değil, yani yetkisizler, bu nedenle sunucu uygun yanıt vermeyi reddediyor. 
+                     401'den farklı olarak, istemcinin kimliği sunucu tarafından bilinir.</p>		  
+
+                      <h5><b>404: NOT FOUND (SAYFA BULUNAMADI)</b></h5>				  
+                      <p>Sunucu istenen kaynağı bulamıyor. Tarayıcıda bu, URL'nin tanınmadığı anlamına gelir.
+                          Bir API'de bu, son noktanın geçerli olduğu ancak kaynağın kendisinin olmadığı anlamına da gelebilir.
+                           Sunucular, bir kaynağın varlığını yetkisiz bir istemciden gizlemek için 403 yerine bu yanıtı da gönderebilir.
+                          Bu yanıt kodu, web'de sık görülmesi nedeniyle muhtemelen en ünlü olanıdır.</p>
+
+                         <h4><b>5XX (500-599 arası) - http durum kodları, sunucu hatası kodları anlamına gelir.</b></h4>	
+                      </br>
+                         <h5><b>500: INTERNAL SERVER EROR (DAHİLİ SUNUCU HATASI)</b></h5>		
+                         <p>	Sunucu, nasıl başa çıkacağını bilmediği bir durumla karşılaştı.</p>
+                         <h5><b>502: BAD GATEWAY (GEÇERSİZ AĞ GEÇİDİ)</b></h5>				  
+                         <p>Bu hata yanıtı, sunucunun isteği işlemek için gereken yanıtı almak için bir ağ geçidi olarak çalışırken geçersiz bir yanıt aldığı anlamına gelir.</p>
+
+                         <div class="quote-wrapper">
                            <div class="quotes">
                              Yazılımda bilgi sonsuzdur öğrendikçe öğrenilmesi gereken şeyler çoğalır.
                            </div>
@@ -179,13 +208,13 @@
                               </a>
                            </li>                         
                         </ul>
-						<ul class="list cat-list">
-                                    <li>
-                                        <a href="http.html" class="d-flex">
-                                 <p>HTTP Durum Kodları</p>                                       
-                                        </a>
-                                    </li>                                                                    
-                                </ul>
+                        <ul class="list cat-list">
+                           <li>
+                              <a href="http.html" class="d-flex">
+                                 <p>Http Komutları Nelerdir?</p>                             
+                              </a>
+                           </li>                         
+                        </ul>
                      </aside>
                     
                    
